@@ -363,6 +363,14 @@ p {
                         align-items: center;
                         flex-direction: row;
                         gap: 20px;
+
+                        & img {
+                            filter: sepia(2);
+                        }
+                    }
+
+                    & .price {
+                        color: var(--red);
                     }
                 }
             }
