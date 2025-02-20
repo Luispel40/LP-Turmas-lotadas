@@ -271,10 +271,10 @@ p {
     & .container {
 
 
-            & h3 {
-                text-align: center;
-                color: #fff !important;
-           
+        & h3 {
+            text-align: center;
+            color: #fff !important;
+
         }
     }
 }
@@ -345,10 +345,12 @@ p {
             text-align: center;
             color: var(--purple) !important;
         }
+
         & .content {
             & img {
                 width: 30px;
             }
+
             & ul {
                 & li {
                     display: flex;
@@ -365,13 +367,47 @@ p {
                         flex-direction: row;
                         gap: 20px;
 
-                        
+
                     }
 
                     & .price {
                         color: var(--red);
                     }
                 }
+            }
+        }
+    }
+}
+
+#tenth {
+    background: linear-gradient(to bottom, var(--red) 0%, transparent 100%), url(/img/bg-pencil.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -2px;
+    min-height: auto;
+
+    & .container {
+        
+        & .card-checkout {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #fff;
+            margin: 20px;
+            width: min(600px, 100%);
+
+            & img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .price-checkout {
+                border-bottom: 1px solid var(--red);
             }
         }
     }
