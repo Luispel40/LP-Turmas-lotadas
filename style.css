@@ -50,6 +50,7 @@ html {
 
 img {
     pointer-events: none;
+    max-width: 100%;
 }
 
 a:not(p>a) {
@@ -282,6 +283,57 @@ p {
     & .container {
         & img {
             filter: grayscale();
+        }
+    }
+}
+
+#eighth {
+    background: var(--red);
+    padding: 20px;
+    min-height: auto;
+
+    & .container {
+        & h2 {
+            text-align: center;
+            color: #fff !important;
+        }
+
+        & .content {
+            & .para-voce {
+                width: 100% !important;
+                scale: 1.8;
+            }
+
+            & .logo {
+                filter: brightness(00) invert();
+            }
+        }
+
+        & ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+            color: #fff !important;
+
+            & li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 20px;
+                margin-bottom: 30px;
+
+                & img {
+                    width: 50px;
+                    filter: invert();
+                }
+            }
+
+
+
         }
     }
 }
