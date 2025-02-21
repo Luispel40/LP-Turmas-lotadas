@@ -776,13 +776,24 @@ footer {
     #fifth {
 
         & .container {
-            flex-direction: column;
+            flex-direction: column !important;
             gap: 5px;
+            width: 100%;
 
             & .grid2 {
                 display: flex;
                 flex-direction: column !important;
                 gap: 10px;
+            }
+        }
+    }
+
+    .card-with-image {
+        & .text {
+            overflow: auto;
+
+            &::-webkit-scrollbar-thumb {
+                background: #000 !important;
             }
         }
     }
