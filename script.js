@@ -11,6 +11,18 @@ const openThis = ({ target }) => {
     }
 };
 
+const iconSwipeOnClick = ({ target }) => {
+    const icon = target.parentElement.querySelector("i");
+    if (icon.classList.contains("fa-plus")) {
+        icon.classList.remove("fa-plus");
+        icon.classList.add("fa-minus");
+    } else {
+        icon.classList.remove("fa-minus");
+        icon.classList.add("fa-plus");
+    }
+}
+
 accordionTitles.forEach((title) => {
     title.addEventListener("click", openThis);
+    title.addEventListener("click", iconSwipeOnClick);
 });
