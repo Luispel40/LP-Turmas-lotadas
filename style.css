@@ -288,7 +288,7 @@ p {
     }
 }
 
-#eighth {
+#eighth, #twelveth {
     background: var(--red);
     padding: 20px;
     min-height: auto;
@@ -307,6 +307,10 @@ p {
 
             & .logo {
                 filter: brightness(00) invert();
+            }
+
+            & p {
+                color: #fff;
             }
         }
 
