@@ -303,6 +303,7 @@ p {
             & .para-voce {
                 width: 100% !important;
                 scale: 1.8;
+                transform: translatey(30px) !important;
             }
 
             & .logo {
