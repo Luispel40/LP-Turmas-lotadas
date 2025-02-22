@@ -379,6 +379,7 @@ p {
 
                     & .price {
                         color: var(--red);
+                        gap: 0px;
                     }
                 }
             }
@@ -526,7 +527,7 @@ b {
         margin: 0;
         text-align: left;
         line-height: 2;
-        padding: 10px;
+        padding: 00px;
         border: none !important;
 
         & h4 {
@@ -555,13 +556,17 @@ b {
             font-size: 16px;
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 20px !important;
 
 
             & img {
                 width: 50px;
                 scale: 1.5;
                 filter: brightness(.95);
+            }
+
+            & .price {
+                font-weight: 600;
             }
 
 
@@ -785,6 +790,16 @@ footer {
                 display: flex;
                 flex-direction: column !important;
                 gap: 10px;
+
+                & h2 {
+                    margin-bottom: 0 !important;
+                    margin-top: 40px;
+                }
+
+                & p {
+                    margin-top: -15px !important;
+                    margin-bottom: 30px;
+                }
             }
         }
     }
