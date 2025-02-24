@@ -279,14 +279,6 @@ p {
     }
 }
 
-#seventh {
-
-    & .container {
-        & img {
-            
-        }
-    }
-}
 
 #eighth,
 #twelveth {
